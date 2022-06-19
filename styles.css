@@ -26,6 +26,9 @@ justify-content: center;
 }
 
 .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 120px;
     height: 150px;
     background-color: #A7E9AF;
@@ -38,19 +41,20 @@ justify-content: center;
 
 
 }
+img{
+    width: 100px;
+    height: 100px;
+}
 .virar{
     transform: rotateY(180deg);
 }
 @media (max-width: 600px){
-.container{
-   
-}
+
     .card-game1, .card-game2{
+        display:flex;
         flex-direction: column;
-       
+        justify-content: center;
     }
-    .card{
-        width: 20vw;
-        height: 100vw;
     }
-}
+
+   
